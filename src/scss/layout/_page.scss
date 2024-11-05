@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+  margin-top: 20px;
+
+  &__section1 {
+    width: 48%;
+  }
+
+  &__section2 {
+    background-color: rgb(107, 107, 107);
+    width: 48%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+      background-color: white;
+      width: 250px;
+      height: 390px;
+    }
+  }
+}
