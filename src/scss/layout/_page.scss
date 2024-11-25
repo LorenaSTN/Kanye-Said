@@ -1,26 +1,44 @@
 .main {
   display: flex;
   justify-content: center;
-  height: 85vh;
+  align-items: center;
+  height: 90vh;
   width: 100vw;
   margin-top: 20px;
 
   &__section1 {
-    width: 48%;
+    width: 25%;
+    height: 100%;
   }
 
   &__section2 {
     background-color: rgb(107, 107, 107);
-    width: 48%;
+    width: 45%;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     &__card {
       background-color: white;
-      width: 250px;
-      height: 390px;
+      width: 280px;
+      height: 400px;
     }
   }
+
+  &__section3 {
+    width: 25%;
+    height: 100%;
+  }
+
+  &__kanye {
+    width: 220px;
+  }
+}
+
+.section1__div {
+  width: 100%;
+  height: fit-content;
+  margin: 40px 0px;
 }
