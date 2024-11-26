@@ -1,33 +1,41 @@
 <main class="main">
   <section class="main__section1">
-
-      <div class="section1__div">
-        <form action="">
+    <div class="section1__div">
+      <form action="">
         <h3>Select your message</h3>
-
-        <input type="radio" id="birthday" name="message" value="birthday" checked />
-        <label for="birthday"> Happy Birthday</lsabel>
-
-        <input type="radio" id="sorry" name="message" value="sorry" />
-        <label for="sorry"> Sorry</label>
-
-        <input type="radio" id="love" name="message" value="love" />
-        <label for="love"> Love you</label>
+        <div>
+          <input
+            type="radio"
+            id="birthday"
+            name="message"
+            value="birthday"
+            checked
+          />
+          <label for="birthday">Happy Birthday</label>
+        </div>
+        <div>
+          <input type="radio" id="sorry" name="message" value="sorry" />
+          <label for="sorry">Sorry</label>
+        </div>
+        <div>
+          <input type="radio" id="love" name="message" value="love" />
+          <label for="love">Love you</label>
+        </div>
       </form>
-      </div>
+    </div>
 
-      <div class="section1__div">
-        <form action="">
-          <h3>Receiver:</h3>
-          <label for="receiver">Name</label>
-          <input type="text" id="receiver" class="inputName-js">
-        </form>
-      </div>
+    <div class="section1__div">
+      <form action="">
+        <h3>Receiver:</h3>
+        <label for="receiver">Name</label>
+        <input type="text" id="receiver" class="inputName-js" />
+      </form>
+    </div>
 
-      <div class="section1__div">
-        <form action="">
-          <h3>Palettes:</h3>
-
+    <div class="section1__div">
+      <form action="">
+        <h3>Palettes:</h3>
+        <div>
           <input
             type="radio"
             id="graduation"
@@ -35,53 +43,40 @@
             value="graduation"
             checked
           />
-          <label for="graduation"
-            >Graduation (2007)
-            <div>
-              <div></div>
-              <div></div>
-              <div></div></div
-          ></label>
-
+          <label for="graduation"> Graduation (2007) </label>
+        </div>
+        <div>
           <input type="radio" id="fantasy" name="palette" value="fantasy" />
-          <label for="fantasy"
-            >My Beautiful Dark Twisted Fantasy (2010)
-            <div>
-              <div></div>
-              <div></div>
-              <div></div></div
-          ></label>
-
+          <label for="fantasy">
+            My Beautiful Dark Twisted Fantasy (2010)
+          </label>
+        </div>
+        <div>
           <input type="radio" id="pablo" name="palette" value="pablo" />
-          <label for="pablo"
-            >The Life of Pablo (2016)
-            <div>
-              <div></div>
-              <div></div>
-              <div></div></div
-          ></label>
-
+          <label for="pablo"> The Life of Pablo (2016) </label>
+        </div>
+        <div>
           <input type="radio" id="ye" name="palette" value="ye" />
-          <label for="ye"
-            >Ye (2018)
-            <div>
-              <div></div>
-              <div></div>
-              <div></div></div
-          ></label>
-        </form>
+          <label for="ye"> Ye (2018) </label>
+        </div>
+      </form>
     </div>
-  </section>
 
+    <button class="main__button quote-btn">Generate Quote</button>
+  </section>
 
   <section class="main__section2">
-    <div class="main__section2__card">
-      <span class="card__title title-js"></span> <span class="name-js"></span>
+    <div class="main__section2__card card-js">
+      <div>
+        <span class="card__title title-js"></span>
+        <span class="name-js"></span>
+      </div>
       <img class="main__kanye" src="../images/kanye-2.png" alt="Kanye West" />
-      <div></div>
+      <p class="card__quote quote-js"></p>
     </div>
   </section>
 
-
-  <section class="main__section3"></section>
+  <section class="main__section3">
+    <button class="save-image-js">Save Image</button>
+  </section>
 </main>

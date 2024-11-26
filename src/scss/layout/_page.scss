@@ -1,5 +1,6 @@
 .main {
   display: flex;
+
   justify-content: center;
   align-items: center;
   height: 90vh;
@@ -9,6 +10,9 @@
   &__section1 {
     width: 25%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   &__section2 {
@@ -21,19 +25,33 @@
     height: 100%;
 
     &__card {
-      background-color: white;
+      background-color: rgb(255, 255, 255);
       width: 280px;
       height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 
   &__section3 {
     width: 25%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__kanye {
     width: 220px;
+  }
+
+  &__button {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    // margin: 0 auto;
   }
 }
 
@@ -41,4 +59,11 @@
   width: 100%;
   height: fit-content;
   margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__quote {
+  padding: 15px;
+  text-align: center;
 }
