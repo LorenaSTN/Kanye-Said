@@ -1,17 +1,35 @@
 .main {
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
+  height: fit-content;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+
+  @media screen and (min-width: 590px) {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    @media screen and (min-width: 790px) {
+      flex-direction: row;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+  }
 
   &__section1 {
-    width: 25%;
-    height: 92%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    // align-items: center;
+    padding-left: 10px;
+
+    @media screen and (min-width: 590px) {
+      width: 24%;
+      height: 92%;
+    }
+
     &__h3 {
       font-size: 20px;
       margin-bottom: 5px;
@@ -20,40 +38,64 @@
 
   &__section2 {
     background-color: rgb(107, 107, 107);
-    width: 45%;
+    margin-top: 20px;
     border-radius: 15px;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 92%;
+    width: 90%;
+    height: 600px;
+
+    @media screen and (min-width: 590px) {
+      width: 50%;
+    }
 
     &__card {
-      background-color: rgb(255, 255, 255);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
 
       &.small {
-        width: 280px;
         height: 400px;
+        width: 270px;
+
+        @media screen and (min-width: 590px) {
+          width: 280px;
+        }
       }
 
       &.large {
-        width: 290px;
         height: 400px;
         border-radius: 40px;
+        width: 280px;
+
+        @media screen and (min-width: 590px) {
+          width: 290px;
+        }
       }
     }
   }
 
   &__section3 {
-    width: 25%;
-    height: 92%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 790px) {
+      width: 24%;
+      height: 92%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__div1 {
+      height: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__kanye {
@@ -62,16 +104,28 @@
 
   &__button {
     width: fit-content;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 10px;
+    border: rgb(83, 83, 83) 2px solid;
     font-family: $font-main;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
 
     &:hover {
-      background-color: rgb(255, 255, 255);
-      color: rgb(66, 66, 66);
+      color: rgb(70, 58, 0);
       border-color: rgb(132, 132, 132);
+      padding: 5px 12px;
+    }
+
+    @media screen and (min-width: 790px) {
+      font-size: 18px;
+    }
+
+    &__div {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 15px;
     }
 
     &__size {
@@ -135,6 +189,7 @@ input[type="radio"] {
   border-radius: 50%;
   appearance: none;
   background-color: transparent;
+  cursor: pointer;
 
   &:not(:disabled):checked {
     background-clip: content-box;
@@ -147,6 +202,26 @@ input[type="radio"] {
       transparent 100%
     );
   }
+}
+
+.div__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  @media screen and (min-width: 590px) {
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 790px) {
+    display: none;
+  }
+}
+
+label {
+  cursor: pointer;
 }
 
 .display {
