@@ -1,21 +1,20 @@
 .main {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   height: fit-content;
   align-items: center;
 
-  @media screen and (min-width: 590px) {
+  // @media screen and (min-width: 590px) {
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   height: 100vh;
+  //   width: 100vw;
+
+  @media screen and (min-width: 790px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100vh;
     width: 100vw;
-
-    @media screen and (min-width: 790px) {
-      flex-direction: row;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-    }
   }
 
   &__section1 {
@@ -23,11 +22,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 10px;
+    padding-left: 20px;
+    order: 2;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 790px) {
       width: 24%;
       height: 92%;
+      order: 1;
     }
 
     &__h3 {
@@ -46,9 +47,11 @@
     align-items: center;
     width: 90%;
     height: 600px;
+    order: 1;
 
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 790px) {
       width: 50%;
+      order: 2;
     }
 
     &__card {
@@ -58,7 +61,7 @@
       align-items: center;
 
       &.small {
-        height: 400px;
+        height: 410px;
         width: 270px;
 
         @media screen and (min-width: 590px) {
@@ -67,7 +70,7 @@
       }
 
       &.large {
-        height: 400px;
+        height: 410px;
         border-radius: 40px;
         width: 280px;
 
@@ -79,19 +82,25 @@
   }
 
   &__section3 {
-    display: none;
+    width: 90%;
+    height: 170px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
 
     @media screen and (min-width: 790px) {
-      width: 24%;
-      height: 92%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      width: 15%;
+      padding-bottom: 0px;
+    }
+    @media screen and (min-width: 990px) {
+      width: 25%;
     }
 
     &__div1 {
-      height: 75%;
+      height: 60%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -201,22 +210,6 @@ input[type="radio"] {
       transparent 60%,
       transparent 100%
     );
-  }
-}
-
-.div__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-
-  @media screen and (min-width: 590px) {
-    height: 50px;
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 790px) {
-    display: none;
   }
 }
 
