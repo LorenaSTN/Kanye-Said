@@ -28,6 +28,7 @@
 	"license": "MIT",
 	"homepage": "https://github.com/adalab/adalab-web-starter-kit",
 	"dependencies": {
+		"dom-to-image-more": "^3.5.0",
 		"html2canvas": "^1.4.1"
 	}
 }

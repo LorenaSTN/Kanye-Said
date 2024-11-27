@@ -1,9 +1,35 @@
+.mixtape {
+  background-color: #dfdbcd;
+  color: black;
+}
+
 .graduation {
-  background: rgb(81, 9, 130);
   background: linear-gradient(
-    270deg,
-    rgba(81, 9, 130, 1) 0%,
-    rgba(189, 44, 167, 1) 39%,
-    rgba(252, 176, 69, 1) 100%
+    180deg,
+    rgb(39, 0, 89) 0%,
+    rgb(196, 51, 140) 59%,
+    rgb(255, 178, 54) 85%,
+    rgb(255, 230, 87) 100%
   );
+
+  color: rgb(194, 22, 117);
+}
+
+.twisted {
+  background-color: #ea1f3a;
+  color: #e6b54f;
+}
+
+.twisted2 {
+  background-color: #1fa38f;
+}
+
+.lifePablo {
+  background-color: #f78c52;
+  color: black;
+}
+
+.ye {
+  background: linear-gradient(180deg, #d6d7d7 0%, #7d92a7 40%, #182c46 100%);
+  color: #11c13a;
 }

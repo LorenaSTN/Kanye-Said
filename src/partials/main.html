@@ -2,7 +2,7 @@
   <section class="main__section1">
     <div class="section1__div">
       <form action="">
-        <h3>Select your message</h3>
+        <h3 class="main__section1__h3">Select your message</h3>
         <div>
           <input
             type="radio"
@@ -26,22 +26,31 @@
 
     <div class="section1__div">
       <form action="">
-        <h3>Receiver:</h3>
+        <h3 class="main__section1__h3">Receiver:</h3>
         <label for="receiver">Name</label>
-        <input type="text" id="receiver" class="inputName-js" />
+        <input type="text" id="receiver" class="main__input inputName-js" />
       </form>
     </div>
 
     <div class="section1__div">
       <form action="">
-        <h3>Palettes:</h3>
+        <h3 class="main__section1__h3">Palettes:</h3>
+        <div>
+          <input
+            type="radio"
+            id="mixtape"
+            name="palette"
+            value="mixtape"
+            checked
+          />
+          <label for="mixtape"> The Late Mixtape (2005) </label>
+        </div>
         <div>
           <input
             type="radio"
             id="graduation"
             name="palette"
             value="graduation"
-            checked
           />
           <label for="graduation"> Graduation (2007) </label>
         </div>
@@ -61,22 +70,33 @@
         </div>
       </form>
     </div>
-
-    <button class="main__button quote-btn">Generate Quote</button>
   </section>
 
   <section class="main__section2">
+    <div class="main__arrows">
+      <button class="resize-btn left-js main__button__size" data-size="small">
+        <i class="fa-solid fa-backward-step"></i>
+      </button>
+    </div>
     <div class="main__section2__card card-js">
       <div>
-        <span class="card__title title-js"></span>
-        <span class="name-js"></span>
+        <span class="card__span title-js"></span>
+        <span class="card__span name-js"></span>
       </div>
-      <img class="main__kanye" src="../images/kanye-2.png" alt="Kanye West" />
+      <div class="photodiv-js card__photoDiv">
+        <img class="main__kanye" src="../images/kanye-2.png" alt="Kanye West" />
+      </div>
       <p class="card__quote quote-js"></p>
+    </div>
+    <div class="main__arrows">
+      <button class="resize-btn right-js main__button__size" data-size="large">
+        <i class="fa-solid fa-forward-step"></i>
+      </button>
     </div>
   </section>
 
   <section class="main__section3">
-    <button class="save-image-js">Save Image</button>
+    <button class="main__button quote-btn">Generate Kanye's Quote</button>
+    <button class="save-image-js main__button">Save Image</button>
   </section>
 </main>
