@@ -4,13 +4,7 @@
   height: fit-content;
   align-items: center;
 
-  // @media screen and (min-width: 590px) {
-  //   flex-direction: row;
-  //   justify-content: space-around;
-  //   height: 100vh;
-  //   width: 100vw;
-
-  @media screen and (min-width: 790px) {
+  @media screen and (min-width: 990px) {
     flex-direction: row;
     justify-content: space-evenly;
     height: 100vh;
@@ -22,18 +16,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 20px;
+    padding-left: 30px;
     order: 2;
+    height: 100%;
 
-    @media screen and (min-width: 790px) {
+    @media screen and (min-width: 990px) {
       width: 24%;
-      height: 92%;
+      padding-bottom: 0px;
       order: 1;
     }
 
     &__h3 {
       font-size: 20px;
       margin-bottom: 5px;
+      color: #191919;
     }
   }
 
@@ -46,12 +42,13 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 600px;
+    height: 650px;
     order: 1;
 
-    @media screen and (min-width: 790px) {
+    @media screen and (min-width: 990px) {
       width: 50%;
       order: 2;
+      margin-top: 0;
     }
 
     &__card {
@@ -87,44 +84,43 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     order: 3;
 
-    @media screen and (min-width: 790px) {
-      width: 15%;
-      padding-bottom: 0px;
-    }
     @media screen and (min-width: 990px) {
-      width: 25%;
+      width: 24%;
+      height: 92%;
     }
 
     &__div1 {
-      height: 60%;
+      height: 70%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 80%;
     }
   }
 
   &__kanye {
-    width: 220px;
+    width: 213px;
   }
 
   &__button {
     width: fit-content;
-    padding: 4px 8px;
+    padding: 3px 8px;
     border-radius: 10px;
-    border: rgb(83, 83, 83) 2px solid;
+    border: rgb(140, 140, 140) 2px solid;
+    background-color: rgb(209, 209, 209);
     font-family: $font-main;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
+    margin-top: 5px;
 
     &:hover {
-      color: rgb(70, 58, 0);
-      border-color: rgb(132, 132, 132);
-      padding: 5px 12px;
+      color: rgb(13, 6, 53);
+      border-color: rgb(13, 6, 53);
     }
 
     @media screen and (min-width: 790px) {
@@ -153,8 +149,10 @@
 
   &__input {
     width: 35%;
-    margin-left: 5px;
+    margin-left: 10px;
     border: none;
+    font-family: $font-main;
+    font-size: 17px;
   }
 
   &__arrows {
@@ -175,7 +173,7 @@
 
 .card {
   &__span {
-    font-size: 20px;
+    font-size: 24px;
   }
   &__quote {
     padding: 15px;
@@ -191,8 +189,8 @@
 
 input[type="radio"] {
   box-sizing: border-box;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   padding: 0;
   border: 2px solid rgb(65, 65, 65);
   border-radius: 50%;
@@ -206,7 +204,7 @@ input[type="radio"] {
     background-image: radial-gradient(
       circle,
       #f3f3f3 0%,
-      #3d3d3d 0%,
+      #676767 0%,
       transparent 60%,
       transparent 100%
     );
@@ -217,6 +215,13 @@ label {
   cursor: pointer;
 }
 
-.display {
-  display: none;
+.label__p {
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: 350;
+}
+
+form div {
+  display: flex;
+  align-items: center;
 }

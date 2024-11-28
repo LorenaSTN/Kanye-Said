@@ -2,7 +2,7 @@
   <section class="main__section1">
     <div class="section1__div">
       <form action="">
-        <h3 class="main__section1__h3">Select your message</h3>
+        <h3 class="main__section1__h3">Select your title:</h3>
         <div>
           <input
             type="radio"
@@ -11,15 +11,15 @@
             value="birthday"
             checked
           />
-          <label for="birthday">Happy Birthday</label>
+          <label for="birthday"> <p class="label__p">Happy Birthday</p></label>
         </div>
         <div>
           <input type="radio" id="sorry" name="message" value="sorry" />
-          <label for="sorry">Sorry</label>
+          <label for="sorry"> <p class="label__p">Sorry</p></label>
         </div>
         <div>
           <input type="radio" id="love" name="message" value="love" />
-          <label for="love">Love you</label>
+          <label for="love"><p class="label__p">Love you</p></label>
         </div>
       </form>
     </div>
@@ -27,8 +27,10 @@
     <div class="section1__div">
       <form action="">
         <h3 class="main__section1__h3">Receiver:</h3>
-        <label for="receiver">Name</label>
-        <input type="text" id="receiver" class="main__input inputName-js" />
+        <div>
+          <label for="receiver"><p class="label__p">Name</p> </label>
+          <input type="text" id="receiver" class="main__input inputName-js" />
+        </div>
       </form>
     </div>
 
@@ -43,7 +45,9 @@
             value="mixtape"
             checked
           />
-          <label for="mixtape"> The Late Mixtape (2005) </label>
+          <label for="mixtape">
+            <p class="label__p">The Late Mixtape (2005)</p>
+          </label>
         </div>
         <div>
           <input
@@ -52,21 +56,25 @@
             name="palette"
             value="graduation"
           />
-          <label for="graduation"> Graduation (2007) </label>
+          <label for="graduation">
+            <p class="label__p">Graduation (2007)</p>
+          </label>
         </div>
         <div>
           <input type="radio" id="fantasy" name="palette" value="fantasy" />
           <label for="fantasy">
-            My Beautiful Dark Twisted Fantasy (2010)
+            <p class="label__p">My Beautiful Dark Twisted Fantasy (2010)</p>
           </label>
         </div>
         <div>
           <input type="radio" id="pablo" name="palette" value="pablo" />
-          <label for="pablo"> The Life of Pablo (2016) </label>
+          <label for="pablo">
+            <p class="label__p">The Life of Pablo (2016)</p>
+          </label>
         </div>
         <div>
           <input type="radio" id="ye" name="palette" value="ye" />
-          <label for="ye"> Ye (2018) </label>
+          <label for="ye"> <p class="label__p">Ye (2018)</p> </label>
         </div>
       </form>
     </div>
@@ -97,6 +105,7 @@
 
   <section class="main__section3">
     <div class="main__section3__div1">
+      <h3 class="main__section1__h3">Choose your message:</h3>
       <button class="main__button quote-btn">Generate Kanye's Quote</button>
     </div>
     <button class="save-image-js main__button">Save Image</button>
