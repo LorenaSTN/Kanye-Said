@@ -20,11 +20,11 @@ Follow these steps to install and run the project locally:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/LorenaSTN/Kanye-Said.git
+   git clone https://github.com/LorenaSTN/kanye-said.git
 
 2. Navigate to the project directory:
     ```bash
-    cd Kanye-Said
+    cd kanye-said
 
 3. Install the dependencies:
     ```bash
